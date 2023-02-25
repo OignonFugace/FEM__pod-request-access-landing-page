@@ -22,23 +22,29 @@
             <p class="subhead">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
             
             <form>
-                <div class="email-input">
-                    <input 
-                        type="email" 
-                        pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$" 
-                        title="Valid e-mail address including top-level domain" 
-                        placeholder="Email address"
-                    />
-                    <button type="submit">Request Access</button>
-                </div>
+                <input 
+                    type="email" 
+                    pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$" 
+                    title="Valid e-mail address including top-level domain" 
+                    placeholder="Email address"
+                />
+                <button type="submit">Request Access</button>
                 <p class="form__message">Please provide a valid email address</p>
             </form>
 
             <div class="podcast-platforms">
-                <img src="./assets/desktop/spotify.svg" alt="Spotify">
-                <img src="./assets/desktop/apple-podcast.svg" alt="Apple Podcasts">
-                <img src="./assets/desktop/google-podcasts.svg" alt="Google Podcasts">
-                <img src="./assets/desktop/pocket-casts.svg" alt="Pocket Podcasts">
+                <div class="cell">
+                    <img src="./assets/desktop/spotify.svg" alt="Spotify">
+                </div>
+                <div class="cell">
+                    <img src="./assets/desktop/apple-podcast.svg" alt="Apple Podcasts">
+                </div>
+                <div class="cell">
+                    <img src="./assets/desktop/google-podcasts.svg" alt="Google Podcasts">
+                </div>
+                <div class="cell">
+                    <img src="./assets/desktop/pocket-casts.svg" alt="Pocket Podcasts">
+                </div>
             </div>
 
         </div>
