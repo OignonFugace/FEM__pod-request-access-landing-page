@@ -160,6 +160,9 @@ select {
     --body-clr: #C2CBE5;
     --white-clr: #FFFFFF;
     --error-clr: #FB3E3E;
+    --element-bg-clr: #2C344B;
+    --svg-clr: #5A68A;
+
 
     --ff: 'Chivo', sans-serif;
 
@@ -173,6 +176,8 @@ select {
     --fw-h: 100;
     --fw-b: 100;
     --fw-form: 700;
+
+    --br: 26px;
 
 
     --fs-body: var(--fs-b-s);
@@ -234,6 +239,50 @@ h1 span {
     color: var(--primary-clr);
 }
 
+input, button[type="submit"] {
+    width: 100%;
+    border: none;
+    background-color: --clr;
+    font-size: var(--fs-input);
+    font-weight: bold;
+    padding: 9px 0;
+    border-radius: var(--br);
+}
+
+input[type="email"] {
+    background-color: var(--element-bg-clr);
+    color: var(--white-clr);
+    padding-left: 32px;
+}
+
+input[type="email"]:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-clr);
+    color: var(--background-color);
+    text-align: center;
+    transition: .15s ease;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: var(--primary-clr-attenuated);
+}
+
+.form__message {
+    color: var(--error-clr);
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
+    margin-top: 1rem;
+}
+
+input:invalid ~ .form__message {
+    display: block;
+}
 
 
 /* PAGE */
@@ -250,6 +299,8 @@ h1 span {
     margin-top: 1rem;
 }
 
+
+/* Podcast platforms */
 .podcast-platforms {
     display: flex;
     justify-content: space-between;
@@ -260,15 +311,20 @@ h1 span {
 
 .podcast-platforms .cell {
     flex: 1 1 auto;
+    color: red;
 }
 
-.podcast-platforms img {
+.podcast-platforms svg {
     max-width: 100%;
-    opacity: .5;
+    color: red;
 }
 
 
+/* Main form */
 form {
     margin-top: 3rem;
 }
 
+button[type="submit"] {
+    margin-top: 1rem;
+}
