@@ -306,6 +306,10 @@ input:invalid ~ .form__message {
     display: block;
 }
 
+input:focus:invalid ~ .form__message {
+    display: none;
+}
+
 
 /* PAGE */
 .site-logo {
